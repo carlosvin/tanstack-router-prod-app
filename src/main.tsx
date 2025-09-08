@@ -29,7 +29,7 @@ if (rootElement && !rootElement.innerHTML) {
   const root = ReactDOM.createRoot(rootElement)
   root.render(
     <StrictMode>
-      <RouterProvider router={router} />
+      <RouterProvider router={router} basepath={import.meta.env.BASE_URL} />
     </StrictMode>,
   )
 }
